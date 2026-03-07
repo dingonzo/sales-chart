@@ -1,6 +1,4 @@
 # sales-chart
-
-# -----------------------------------------
 A simple Java console application that generates a visual bar chart representing daily sales for five different store locations.
 
 # Description
