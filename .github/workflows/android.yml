@@ -19,7 +19,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: 'gradle' # This is what triggers the file search
+          # Remove the cache line here
           
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
