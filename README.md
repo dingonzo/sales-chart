@@ -1,5 +1,6 @@
 # Sales-Chart
 [![Android CI](https://github.com/dingonzo/sales-chart/actions/workflows/android.yml/badge.svg)](https://github.com/dingonzo/sales-chart/actions/workflows/android.yml)
+#
 A simple Java console application that generates a visual bar chart representing daily sales for five different store locations.
 
 # Description
