@@ -23,5 +23,12 @@ jobs:
       - name: Compile Java File
         run: javac SalesChart.java
 
-      - name: Run Java Program (Optional)
-        run: java SalesChart
+      - name: Run Java Program with Mock Input
+        run: |
+          java SalesChart <<EOF
+          100
+          200
+          300
+          400
+          500
+          EOF
