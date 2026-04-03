@@ -10,7 +10,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # This is the missing piece!
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -19,10 +18,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          # Remove the cache line here
-          
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+          # Note: No "cache: gradle" here because you don't have gradle files
 
-      - name: Build with Gradle
-        run: ./gradlew build
+      - name: Compile Java File
+        run: javac SalesChart.java
+
+      - name: Run Java Program (Optional)
+        run: java SalesChart
